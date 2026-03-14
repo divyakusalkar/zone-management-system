@@ -2,7 +2,7 @@
 
 A full-stack web application for managing **Zones** associated with Brands, Companies, and Groups.
 
----
+
 
 ## Tech Stack
 
@@ -12,7 +12,7 @@ A full-stack web application for managing **Zones** associated with Brands, Comp
 | Backend   | Spring Boot 3.4, Spring Data JPA, Lombok, Validation |
 | Database  | MySQL 8+                                         |
 
----
+
 
 ## Project Structure
 
@@ -53,7 +53,7 @@ Zone Management System/
         └── utils/          helpers.js
 ```
 
----
+
 
 ## Prerequisites
 
@@ -106,7 +106,7 @@ The UI starts at **http://localhost:5173**
 
 > The Vite dev-server proxies `/api/*` → `http://localhost:8080`, so no CORS issues during development.
 
----
+
 
 ## API Reference
 
@@ -120,7 +120,7 @@ All responses follow the envelope:
 }
 ```
 
----
+
 
 ### Zones
 
@@ -166,7 +166,7 @@ Returns paginated, filterable list of zones.
 }
 ```
 
----
+
 
 #### GET `/api/zones/{id}`
 Returns a single zone.
@@ -190,7 +190,7 @@ Create a new zone.
 
 **Response:** `201 Created` with the created zone object.
 
----
+
 
 #### PUT `/api/zones/{id}`
 Update an existing zone.
@@ -206,7 +206,7 @@ Soft-delete a zone (`is_active = false`).
 
 **Response:** `200 OK`
 
----
+
 
 ### Brands
 
@@ -220,7 +220,7 @@ Returns all active brands.
 | `companyId` | Integer | Filter by company        |
 | `groupId`   | Integer | Filter by group          |
 
----
+
 
 ### Companies
 
@@ -233,14 +233,14 @@ Returns all active companies.
 |-----------|---------|-------------------|
 | `groupId` | Integer | Filter by group   |
 
----
+
 
 ### Groups
 
 #### GET `/api/groups`
 Returns all active groups.
 
----
+
 
 ## Error Responses
 
@@ -260,7 +260,7 @@ Returns all active groups.
 }
 ```
 
----
+
 
 ## Frontend Pages
 
@@ -270,7 +270,7 @@ Returns all active groups.
 | `/zones/add`       | Add Zone          | Form to create a new zone     |
 | `/zones/edit/:id`  | Edit Zone         | Form to update an existing zone |
 
----
+
 
 ## Features
 
