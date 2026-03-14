@@ -62,7 +62,7 @@ Zone Management System/
 - **Node.js 20+** (npm 10+)
 - **MySQL 8+**
 
----
+
 
 ## Setup & Run
 
@@ -171,7 +171,7 @@ Returns paginated, filterable list of zones.
 #### GET `/api/zones/{id}`
 Returns a single zone.
 
----
+
 
 #### POST `/api/zones`
 Create a new zone.
@@ -199,7 +199,7 @@ Update an existing zone.
 
 **Response:** `200 OK` with the updated zone object.
 
----
+
 
 #### DELETE `/api/zones/{id}`
 Soft-delete a zone (`is_active = false`).
